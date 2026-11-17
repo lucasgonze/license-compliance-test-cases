@@ -1,0 +1,7 @@
+{
+  "name": "license-test-ofl-1.0-rfn",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "OFL-1.0-RFN"
+}
