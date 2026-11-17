@@ -1,0 +1,7 @@
+{
+  "name": "license-test-unicode-3.0",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "Unicode-3.0"
+}
