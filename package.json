@@ -1,0 +1,7 @@
+{
+  "name": "license-test-adobe-2006",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "Adobe-2006"
+}
