@@ -1,0 +1,7 @@
+{
+  "name": "license-test-cecill-1.0",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "CECILL-1.0"
+}
