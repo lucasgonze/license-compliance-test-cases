@@ -1,0 +1,7 @@
+{
+  "name": "license-test-bsd-3-clause-no-nuclear-license-2014",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "BSD-3-Clause-No-Nuclear-License-2014"
+}
