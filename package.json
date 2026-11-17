@@ -1,0 +1,7 @@
+{
+  "name": "license-test-ogl-canada-2.0",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "OGL-Canada-2.0"
+}
