@@ -1,0 +1,7 @@
+{
+  "name": "license-test-artistic-dist",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "Artistic-dist"
+}
