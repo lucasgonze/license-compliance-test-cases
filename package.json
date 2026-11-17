@@ -1,0 +1,7 @@
+{
+  "name": "license-test-lzma-sdk-9.11-to-9.20",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "LZMA-SDK-9.11-to-9.20"
+}
