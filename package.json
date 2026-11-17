@@ -1,0 +1,7 @@
+{
+  "name": "license-test-bsd-1-clause",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "BSD-1-Clause"
+}
