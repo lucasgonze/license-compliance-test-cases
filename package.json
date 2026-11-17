@@ -1,0 +1,7 @@
+{
+  "name": "license-test-iec-code-components-eula",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "IEC-Code-Components-EULA"
+}
