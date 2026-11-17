@@ -1,0 +1,7 @@
+{
+  "name": "license-test-bsd-attribution-hpnd-disclaimer",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "BSD-Attribution-HPND-disclaimer"
+}
