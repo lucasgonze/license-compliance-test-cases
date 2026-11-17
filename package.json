@@ -1,0 +1,7 @@
+{
+  "name": "license-test-shl-0.51",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "SHL-0.51"
+}
