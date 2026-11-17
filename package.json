@@ -1,0 +1,7 @@
+{
+  "name": "license-test-sgi-b-2.0",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "SGI-B-2.0"
+}
