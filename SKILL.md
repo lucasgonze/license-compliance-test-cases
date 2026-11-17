@@ -38,7 +38,7 @@ Known-fixed pitfalls, so don't reintroduce them:
 - **Fetch URL:** a plain string. Never wrap it in markdown link syntax (`[url](url)`), which makes `fetch` throw.
 - **Stray files:** provider commits use `git add README.md index.js package.json`. Never `git add .`, which commits untracked `AGENTS.md`, `node_modules`, and so on.
 - **ESM on older Node:** the script is `.mjs` and uses the global `fetch` (Node 18+).
-- **Main branch:** only the generated `package.json`, `index.js`, and `README.md` are overwritten. Nothing else on `main` is removed, and `main` is pushed without `--force`.
+- **Main branch:** only the generated `package.json` and `index.js` are overwritten (the hand-written `README.md` is left alone). Nothing else on `main` is removed, and `main` is pushed without `--force`.
 - **Branch hygiene:** the script always returns to `main`, even on failure. If it dies partway, run `git checkout -f main`.
 - **Collisions:** `GPL-2.0` and `GPL-2.0+` map to different npm aliases (`+` becomes `-plus`). The script aborts on any alias collision. Import identifiers are index-based.
 

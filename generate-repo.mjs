@@ -94,9 +94,8 @@ async function generate() {
     dependencies,
   }, null, 2));
   fs.writeFileSync('index.js', `${imports.join('\n')}\n\n${logs.join('\n')}\n`);
-  fs.writeFileSync('README.md', '# Massive License Compliance Test\n\nRun `npm install` then `node index.js` to test all SPDX branches.\n');
 
-  git('add', 'package.json', 'index.js', 'README.md');
+  git('add', 'package.json', 'index.js');
   git('commit', '--allow-empty', '-m', 'feat: sync main massive multi-license consumer\n\nCo-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>');
 
   if (!push) {
