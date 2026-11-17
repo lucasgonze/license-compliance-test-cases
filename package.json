@@ -1,0 +1,7 @@
+{
+  "name": "license-test-gsoap-1.3b",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "gSOAP-1.3b"
+}
