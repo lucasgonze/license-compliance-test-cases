@@ -1,0 +1,7 @@
+{
+  "name": "license-test-cal-1.0-combined-work-exception",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "CAL-1.0-Combined-Work-Exception"
+}
