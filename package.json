@@ -1,0 +1,7 @@
+{
+  "name": "license-test-mpl-1.1",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "MPL-1.1"
+}
