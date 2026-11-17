@@ -1,0 +1,7 @@
+{
+  "name": "license-test-brian-gladman-3-clause",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "Brian-Gladman-3-Clause"
+}
