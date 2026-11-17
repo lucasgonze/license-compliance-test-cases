@@ -1,0 +1,7 @@
+{
+  "name": "license-test-opubl-1.0",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "OPUBL-1.0"
+}
