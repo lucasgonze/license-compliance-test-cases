@@ -1,0 +1,7 @@
+{
+  "name": "license-test-jpl-image",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "JPL-image"
+}
