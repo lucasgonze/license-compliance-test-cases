@@ -1,0 +1,7 @@
+{
+  "name": "license-test-gl2ps",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "GL2PS"
+}
