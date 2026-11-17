@@ -1,0 +1,7 @@
+{
+  "name": "license-test-dec-3-clause",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "DEC-3-Clause"
+}
