@@ -1,0 +1,7 @@
+{
+  "name": "license-test-any-osi-perl-modules",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "any-OSI-perl-modules"
+}
