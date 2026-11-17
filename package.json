@@ -1,0 +1,7 @@
+{
+  "name": "license-test-zpl-2.1",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "ZPL-2.1"
+}
