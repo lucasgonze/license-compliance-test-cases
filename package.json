@@ -1,0 +1,7 @@
+{
+  "name": "license-test-sendmail-8.23",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "Sendmail-8.23"
+}
