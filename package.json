@@ -1,0 +1,7 @@
+{
+  "name": "license-test-npl-1.1",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "NPL-1.1"
+}
