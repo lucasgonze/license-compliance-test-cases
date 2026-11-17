@@ -1,0 +1,7 @@
+{
+  "name": "license-test-watcom-1.0",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "Watcom-1.0"
+}
