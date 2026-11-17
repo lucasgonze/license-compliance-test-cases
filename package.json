@@ -1,0 +1,7 @@
+{
+  "name": "license-test-noweb",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "Noweb"
+}
