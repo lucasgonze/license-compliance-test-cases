@@ -1,0 +1,7 @@
+{
+  "name": "license-test-bsd-3-clause-openwebui",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "BSD-3-Clause-OpenWebUI"
+}
