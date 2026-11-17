@@ -1,0 +1,7 @@
+{
+  "name": "license-test-mup",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "Mup"
+}
