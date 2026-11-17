@@ -1,0 +1,7 @@
+{
+  "name": "license-test-lgpl-3.0-only",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "LGPL-3.0-only"
+}
