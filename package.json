@@ -1,0 +1,7 @@
+{
+  "name": "license-test-ttyp0",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "TTYP0"
+}
