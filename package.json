@@ -1,0 +1,7 @@
+{
+  "name": "license-test-vixie-cron",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "Vixie-Cron"
+}
