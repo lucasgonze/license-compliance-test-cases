@@ -1,0 +1,7 @@
+{
+  "name": "license-test-capec-tou",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "CAPEC-tou"
+}
