@@ -1,0 +1,7 @@
+{
+  "name": "license-test-lpl-1.02",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "LPL-1.02"
+}
