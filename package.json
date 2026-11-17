@@ -1,0 +1,7 @@
+{
+  "name": "license-test-jasper-2.0",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "JasPer-2.0"
+}
