@@ -1,0 +1,7 @@
+{
+  "name": "license-test-blueoak-1.0.0",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "BlueOak-1.0.0"
+}
