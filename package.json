@@ -1,0 +1,7 @@
+{
+  "name": "license-test-python-2.0",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "Python-2.0"
+}
