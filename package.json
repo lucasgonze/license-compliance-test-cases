@@ -1,0 +1,7 @@
+{
+  "name": "license-test-gfdl-1.1-no-invariants-or-later",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "GFDL-1.1-no-invariants-or-later"
+}
