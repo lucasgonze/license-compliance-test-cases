@@ -1,0 +1,7 @@
+{
+  "name": "license-test-graphics-gems",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "Graphics-Gems"
+}
