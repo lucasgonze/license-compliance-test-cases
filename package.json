@@ -1,0 +1,7 @@
+{
+  "name": "license-test-mackerras-3-clause",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "Mackerras-3-Clause"
+}
