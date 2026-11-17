@@ -1,0 +1,7 @@
+{
+  "name": "license-test-artistic-1.0-cl8",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "Artistic-1.0-cl8"
+}
