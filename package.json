@@ -1,0 +1,7 @@
+{
+  "name": "license-test-dl-de-zero-2.0",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "DL-DE-ZERO-2.0"
+}
