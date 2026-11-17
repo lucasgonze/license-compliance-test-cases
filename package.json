@@ -1,0 +1,7 @@
+{
+  "name": "license-test-nist-software",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "NIST-Software"
+}
