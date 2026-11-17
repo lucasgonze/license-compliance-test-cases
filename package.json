@@ -1,0 +1,7 @@
+{
+  "name": "license-test-linux-man-pages-1-para",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "Linux-man-pages-1-para"
+}
