@@ -1,0 +1,7 @@
+{
+  "name": "license-test-ncgl-uk-2.0",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "NCGL-UK-2.0"
+}
