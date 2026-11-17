@@ -1,0 +1,7 @@
+{
+  "name": "license-test-bsd-advertising-acknowledgement",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "BSD-Advertising-Acknowledgement"
+}
