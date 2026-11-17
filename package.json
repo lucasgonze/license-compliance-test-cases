@@ -1,0 +1,7 @@
+{
+  "name": "license-test-linux-man-pages-copyleft-var",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "Linux-man-pages-copyleft-var"
+}
