@@ -1,0 +1,7 @@
+{
+  "name": "license-test-bsd-source-code-no-disclaimer",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "BSD-Source-Code-no-disclaimer"
+}
