@@ -1,0 +1,7 @@
+{
+  "name": "license-test-sendmail-open-source-1.1",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "Sendmail-Open-Source-1.1"
+}
