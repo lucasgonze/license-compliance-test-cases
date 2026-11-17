@@ -1,0 +1,7 @@
+{
+  "name": "license-test-torque-1.1",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "TORQUE-1.1"
+}
