@@ -1,0 +1,7 @@
+{
+  "name": "license-test-miros",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "MirOS"
+}
