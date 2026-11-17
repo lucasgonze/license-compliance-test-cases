@@ -1,0 +1,7 @@
+{
+  "name": "license-test-gpl-2.0-with-bison-exception",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "GPL-2.0-with-bison-exception"
+}
