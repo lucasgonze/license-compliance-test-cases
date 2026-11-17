@@ -1,0 +1,7 @@
+{
+  "name": "license-test-afl-3.0",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "AFL-3.0"
+}
