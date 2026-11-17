@@ -1,0 +1,7 @@
+{
+  "name": "license-test-bsd-systemics-w3works",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "BSD-Systemics-W3Works"
+}
