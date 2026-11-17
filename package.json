@@ -1,0 +1,7 @@
+{
+  "name": "license-test-fsl-1.1-mit",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "FSL-1.1-MIT"
+}
