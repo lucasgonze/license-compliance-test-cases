@@ -1,0 +1,7 @@
+{
+  "name": "license-test-sugarcrm-1.1.3",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "SugarCRM-1.1.3"
+}
