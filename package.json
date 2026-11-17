@@ -1,0 +1,7 @@
+{
+  "name": "license-test-kazlib",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "Kazlib"
+}
