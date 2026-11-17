@@ -1,0 +1,7 @@
+{
+  "name": "license-test-x11-no-permit-persons",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "X11-no-permit-persons"
+}
