@@ -1,0 +1,7 @@
+{
+  "name": "license-test-ogdl-taiwan-1.0",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "OGDL-Taiwan-1.0"
+}
