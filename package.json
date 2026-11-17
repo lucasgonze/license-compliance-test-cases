@@ -1,0 +1,11 @@
+{
+  "name": "license-compliance-consumer",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Consumer app pulling the same repository from hundreds of branches to test license compliance.",
+  "dependencies": {
+    "mit": "github:lucasgonze/license-compliance-test-cases#MIT",
+    "gpl-2.0-plus": "github:lucasgonze/license-compliance-test-cases#GPL-2.0+",
+    "0bsd": "github:lucasgonze/license-compliance-test-cases#0BSD"
+  }
+}
