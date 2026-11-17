@@ -1,0 +1,7 @@
+{
+  "name": "license-test-apsl-1.2",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "APSL-1.2"
+}
