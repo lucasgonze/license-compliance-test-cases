@@ -1,0 +1,7 @@
+{
+  "name": "license-test-hpnd-sell-mit-disclaimer-xserver",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "HPND-sell-MIT-disclaimer-xserver"
+}
