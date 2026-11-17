@@ -1,0 +1,7 @@
+{
+  "name": "license-test-ms-lpl",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "MS-LPL"
+}
