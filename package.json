@@ -1,0 +1,7 @@
+{
+  "name": "license-test-libpng-1.6.35",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "libpng-1.6.35"
+}
