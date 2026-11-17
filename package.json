@@ -1,0 +1,7 @@
+{
+  "name": "license-test-hdparm",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "hdparm"
+}
