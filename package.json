@@ -1,0 +1,7 @@
+{
+  "name": "license-test-liliq-p-1.1",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "LiLiQ-P-1.1"
+}
