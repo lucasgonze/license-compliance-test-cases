@@ -1,0 +1,7 @@
+{
+  "name": "license-test-opl-uk-3.0",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "OPL-UK-3.0"
+}
