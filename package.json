@@ -1,0 +1,7 @@
+{
+  "name": "license-test-oar",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "OAR"
+}
