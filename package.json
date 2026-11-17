@@ -1,0 +1,7 @@
+{
+  "name": "license-test-cern-ohl-1.2",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "CERN-OHL-1.2"
+}
