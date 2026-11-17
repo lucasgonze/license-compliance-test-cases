@@ -16,9 +16,11 @@ const REPO_URL = 'github:lucasgonze/license-compliance-test-cases';
 
 // Explicit expectations, deliberately not derived from the generator's own alias function.
 const CASES = [
-  { id: 'MIT', alias: 'mit', licenseText: /^MIT License/ },
-  { id: 'GPL-2.0+', alias: 'gpl-2.0-plus', licenseText: /GNU GENERAL PUBLIC LICENSE/ },
-  { id: '0BSD', alias: '0bsd', licenseText: /Permission to use, copy, modify/ },
+  { id: 'MIT', slug: 'mit', alias: 'nop-mit', licenseText: /^MIT License/ },
+  { id: 'GPL-2.0+', slug: 'gpl-2.0-plus', alias: 'nop-gpl-2.0-plus', licenseText: /GNU GENERAL PUBLIC LICENSE/ },
+  { id: '0BSD', slug: '0bsd', alias: 'nop-0bsd', licenseText: /Permission to use, copy, modify/ },
+  // Regression: the bare alias "zlib" is a Node built-in and made `import ... from 'zlib'` fail.
+  { id: 'Zlib', slug: 'zlib', alias: 'nop-zlib', licenseText: /^zlib License/ },
 ];
 
 const hasTool = (cmd) => spawnSync(cmd, ['--version'], { stdio: 'ignore' }).status === 0;
@@ -74,14 +76,14 @@ describe('fossa analyze on generated output', { skip: missing.length ? `missing 
   after(() => fs.rmSync(tmp, { recursive: true, force: true }));
 
   describe('provider branches', () => {
-    for (const { id, alias, licenseText } of CASES) {
+    for (const { id, slug, licenseText } of CASES) {
       test(id, () => {
         run('git', ['checkout', '-q', id], scratch);
         try {
           assert.deepEqual(fs.readdirSync(scratch).filter((f) => f !== '.git').sort(), ['LICENSE', 'README.md', 'index.js', 'package.json']);
           const pkg = JSON.parse(fs.readFileSync(path.join(scratch, 'package.json'), 'utf8'));
           assert.equal(pkg.license, id);
-          assert.equal(pkg.name, `license-test-${alias}`);
+          assert.equal(pkg.name, `license-test-${slug}`);
           assert.match(fs.readFileSync(path.join(scratch, 'LICENSE'), 'utf8'), licenseText);
 
           const out = fossaAnalyze(scratch);

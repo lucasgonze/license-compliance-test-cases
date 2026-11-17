@@ -13,7 +13,7 @@ A user of this repository would clone it, add to their tooling, and verify that 
 The repository tests license detection by making one repository contain many licenses:
 
 - **Provider branches:** There is one orphan branch for each ID in the [SPDX license list](https://spdx.org/licenses/), named exactly by its SPDX ID (e.g. `MIT`, `GPL-2.0-only`, `AGPL-3.0-or-later`). Each holds a tiny ESM npm package whose `package.json` declares that license, plus a `LICENSE` file with the full license text from SPDX. Scanners can therefore be tested on both declared licenses and license-text detection. The package has no history in common with any other branch.
-- **Consumer branch:** `main` is an npm project that depends on every provider branch through a git dependency, `github:lucasgonze/license-compliance-test-cases#<SPDX ID>`. Each dependency is aliased to a lowercase npm-safe name, with `+` written as `-plus` so `GPL-2.0` and `GPL-2.0+` stay distinct.
+- **Consumer branch:** `main` is an npm project that depends on every provider branch through a git dependency, `github:lucasgonze/license-compliance-test-cases#<SPDX ID>`. Each dependency is aliased to `nop-` plus a lowercase npm-safe form of the ID, with `+` written as `-plus` (`nop-gpl-2.0-plus`) so `GPL-2.0` and `GPL-2.0+` stay distinct. The prefix keeps bare names such as `zlib`, a Node built-in, from shadowing a provider.
 - **Why one repo:** A compliance scanner pointed at `main` has to resolve hundreds of dependencies, each declaring a different license. The scanner's output can then be compared with the full SPDX list to see which licenses it detects and which it misses.
 
 ### Layout of `main`
@@ -42,7 +42,7 @@ The repository tests license detection by making one repository contain many lic
 
 It commits only when a file actually changed, so re-running on an unchanged SPDX list adds no commits. It aborts if two SPDX IDs map to the same npm name.
 
-**Debug set:** While the generator is being debugged, a run with no selection flag generates only `MIT` (a baseline), `GPL-2.0+` (a `+` in the ref and a deprecated ID) and `0BSD` (a leading digit). `--only=ID,...` picks specific IDs, and `--limit=N` takes the first N of the SPDX list. `--limit=all` generates every ID, which means about 740 force-pushed branches. Don't use it without deciding that is what you want.
+**Debug set:** While the generator is being debugged, a run with no selection flag generates only `MIT` (a baseline), `GPL-2.0+` (a `+` in the ref and a deprecated ID), `0BSD` (a leading digit) and `Zlib` (its bare name is a Node built-in). `--only=ID,...` picks specific IDs, and `--limit=N` takes the first N of the SPDX list. `--limit=all` generates every ID, which means about 740 force-pushed branches. Don't use it without deciding that is what you want.
 
 ## Usage
 

@@ -8,4 +8,4 @@ All build, update, and verification instructions live in the skill:
 
 The generator script sits next to it as `generate-repo.mjs`.
 
-By default the generator builds only a 3-license debug set. Do not use `--limit=all` without explicit user confirmation.
+By default the generator builds only a 4-license debug set. Do not use `--limit=all` without explicit user confirmation.

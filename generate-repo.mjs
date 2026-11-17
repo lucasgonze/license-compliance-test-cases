@@ -12,7 +12,8 @@ const BATCH_SIZE = 50;
 const DEBUG_SET = [
   'MIT', // Baseline: plain ID, nothing unusual.
   'GPL-2.0+', // "+" in the branch name and git ref, alias rewrite to "-plus", deprecated ID.
-  '0BSD', // Starts with a digit, so the npm alias and import specifier start with one.
+  '0BSD', // Leading digit in the SPDX ID, which must still yield valid npm names.
+  'Zlib', // Bare name "zlib" is a Node built-in, so the "nop-" alias prefix is required.
 ];
 
 const args = process.argv.slice(2);
@@ -37,7 +38,11 @@ const commitIfChanged = (message) => {
 };
 
 // "GPL-2.0" and "GPL-2.0+" must not collide; "+" becomes "-plus".
-const toNpmAlias = (id) => id.toLowerCase().replace(/\+/g, '-plus').replace(/[^a-z0-9-~._]/g, '-');
+const toSlug = (id) => id.toLowerCase().replace(/\+/g, '-plus').replace(/[^a-z0-9-~._]/g, '-');
+// Dependency name in the consumer. The prefix keeps bare names like "zlib" (a Node built-in) and
+// "mit" (a public npm package) from shadowing, or being mistaken for, the provider packages.
+const ALIAS_PREFIX = 'nop-';
+const toNpmAlias = (id) => `${ALIAS_PREFIX}${toSlug(id)}`;
 
 const fetchJson = async (url) => {
   const response = await fetch(url);
@@ -118,7 +123,7 @@ async function generate() {
       fs.writeFileSync('README.md', `# ${id} Provider\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit.\n\nLicensed under ${id}; see LICENSE.\n`);
       fs.writeFileSync('index.js', `export const text = "Lorem ipsum dolor sit amet...";\nexport const license = ${JSON.stringify(id)};\n`);
       fs.writeFileSync('package.json', `${JSON.stringify({
-        name: `license-test-${alias}`,
+        name: `license-test-${toSlug(id)}`,
         version: '1.0.0',
         type: 'module',
         main: 'index.js',

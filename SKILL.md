@@ -16,8 +16,9 @@ With no selection flag, the script generates only the **debug set** (`DEBUG_SET`
 | ID | Why it's included |
 | --- | --- |
 | `MIT` | Baseline with nothing unusual. |
-| `GPL-2.0+` | `+` in the branch name and git ref, alias rewrite to `gpl-2.0-plus`, deprecated ID. |
-| `0BSD` | Leading digit in the npm alias and import specifier. |
+| `GPL-2.0+` | `+` in the branch name and git ref, alias rewrite to `nop-gpl-2.0-plus`, deprecated ID. |
+| `0BSD` | Leading digit in the SPDX ID, which must still yield valid npm names. |
+| `Zlib` | The bare name `zlib` is a Node built-in, which shadows `node_modules` on import. The `nop-` prefix prevents this. |
 
 Pushes force-overwrite provider branches, so stay on the debug set until the process is proven.
 
@@ -45,7 +46,7 @@ Don't combine `--prune` with the debug set after a full run unless you mean to d
 
 ```bash
 node generate-repo.mjs --no-push   # dry run
-git branch --list                  # expect MIT, GPL-2.0+, 0BSD and main
+git branch --list                  # expect MIT, GPL-2.0+, 0BSD, Zlib and main
 node generate-repo.mjs             # push the debug set
 ```
 
@@ -59,6 +60,7 @@ Known-fixed pitfalls, so don't reintroduce them:
 - **Main branch:** only the generated `package.json` and `index.js` are overwritten (the hand-written `README.md` is left alone). Nothing else on `main` is removed, and `main` is pushed without `--force`.
 - **Network failures:** the SPDX list and every license text are fetched before any branch is touched.
 - **Branch hygiene:** the script always returns to `main`, even on failure. If it dies partway, run `git checkout -f main`.
+- **Alias prefix:** every consumer dependency is named `nop-<slug>`. Never use bare SPDX-derived names: `zlib` is a Node built-in and breaks `import`, and bare names like `mit` may match unrelated public npm packages. Provider `package.json` names stay `license-test-<slug>`, so changing the prefix doesn't touch provider branches.
 - **Collisions:** `GPL-2.0` and `GPL-2.0+` map to different npm aliases (`+` becomes `-plus`). The script checks the whole SPDX list and aborts on any alias collision. Import identifiers are index-based.
 
 ## Step 3: Verify and install
@@ -66,7 +68,7 @@ Known-fixed pitfalls, so don't reintroduce them:
 1. `git checkout main`
 2. `npm install --maxsockets=3 --fetch-retries=5`. Low concurrency avoids hundreds of simultaneous `git clone`s and GitHub rate limits.
 3. `node index.js`
-4. Confirm it prints one `Loaded <ID> branch: ...` line per generated branch (3 with the debug set).
+4. Confirm it prints one `Loaded <ID> branch: ...` line per generated branch (4 with the debug set).
 
 ## Before using `--limit=all`
 
@@ -80,4 +82,4 @@ Known-fixed pitfalls, so don't reintroduce them:
 
 - Don't wrap this in an `npm test` script. The generator overwrites `package.json` on `main`.
 - The empty API key means nothing is uploaded, and offline output holds only the dependency graph. The tests therefore cover the provider contents, the graph FOSSA resolves for `main`, and `node index.js`. They don't assert that FOSSA detects any license, because that happens server-side after an upload.
-- After `npm install`, FOSSA reports packages by their npm alias (`npm+mit$1.0.0`) and drops the git URL. A server-side scan may therefore look up `mit` on the public npm registry instead of the provider branch. Check this on a real FOSSA upload before relying on the suite for license detection.
+- After `npm install`, FOSSA reports packages by their npm alias (`npm+nop-mit$1.0.0`) and drops the git URL. A server-side scan may therefore look the name up on the public npm registry instead of using the provider branch. The `nop-` prefix makes a collision unlikely, and the names checked so far are unregistered, but confirm on a real FOSSA upload before relying on the suite for license detection.
