@@ -1,0 +1,7 @@
+{
+  "name": "license-test-sun-ppp-2000",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "Sun-PPP-2000"
+}
