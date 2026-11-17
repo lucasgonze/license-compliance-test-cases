@@ -1,0 +1,7 @@
+{
+  "name": "license-test-bzip2-1.0.5",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "bzip2-1.0.5"
+}
