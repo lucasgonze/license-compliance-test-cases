@@ -1,0 +1,7 @@
+{
+  "name": "license-test-fsfap-no-warranty-disclaimer",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "FSFAP-no-warranty-disclaimer"
+}
