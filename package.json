@@ -1,0 +1,7 @@
+{
+  "name": "license-test-hpnd-sell-variant-mit-disclaimer",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "HPND-sell-variant-MIT-disclaimer"
+}
