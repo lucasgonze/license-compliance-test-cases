@@ -1,0 +1,7 @@
+{
+  "name": "license-test-latex2e-translated-notice",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "Latex2e-translated-notice"
+}
