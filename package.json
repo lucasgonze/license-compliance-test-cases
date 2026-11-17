@@ -1,0 +1,7 @@
+{
+  "name": "license-test-bsd-2-clause-netbsd",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "BSD-2-Clause-NetBSD"
+}
