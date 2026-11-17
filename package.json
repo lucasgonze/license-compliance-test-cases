@@ -1,0 +1,7 @@
+{
+  "name": "license-test-knuth-ctan",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "Knuth-CTAN"
+}
