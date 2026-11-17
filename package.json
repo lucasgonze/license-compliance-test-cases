@@ -1,0 +1,7 @@
+{
+  "name": "license-test-hpnd-inria-imag",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "HPND-INRIA-IMAG"
+}
