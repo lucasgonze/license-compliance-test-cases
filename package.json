@@ -1,0 +1,7 @@
+{
+  "name": "license-test-libutil-david-nugent",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "libutil-David-Nugent"
+}
