@@ -1,0 +1,7 @@
+{
+  "name": "license-test-busl-1.1",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "BUSL-1.1"
+}
