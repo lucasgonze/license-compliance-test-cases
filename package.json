@@ -1,0 +1,7 @@
+{
+  "name": "license-test-cc0-1.0",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "CC0-1.0"
+}
