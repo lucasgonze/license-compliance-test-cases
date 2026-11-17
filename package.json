@@ -1,0 +1,7 @@
+{
+  "name": "license-test-hdf5",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "HDF5"
+}
