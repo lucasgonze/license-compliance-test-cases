@@ -1,0 +1,7 @@
+{
+  "name": "license-test-oset-pl-2.1",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "OSET-PL-2.1"
+}
