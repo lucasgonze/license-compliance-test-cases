@@ -1,0 +1,7 @@
+{
+  "name": "license-test-cve-tou",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "cve-tou"
+}
