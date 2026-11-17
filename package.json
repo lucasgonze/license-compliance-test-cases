@@ -1,0 +1,7 @@
+{
+  "name": "license-test-iso-permission",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "ISO-permission"
+}
