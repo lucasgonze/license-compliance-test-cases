@@ -73,3 +73,11 @@ Known-fixed pitfalls, so don't reintroduce them:
 - Check that `npm install` resolves `github:...#GPL-2.0+` from GitHub. It works with a local `git+file:` remote, but `github:` refs are fetched as tarballs.
 - Check on GitHub that the debug-set branches look right, including their `LICENSE` files.
 - Expect ~740 license-text fetches and a push of ~740 branches in batches of 50.
+
+## Tests
+
+`node --test test/fossa.integration.test.mjs` builds the debug set in a temporary repo and runs `FOSSA_API_KEY= fossa analyze --output --experimental-force-first-party-scans .` on it. It needs `fossa`, `git`, `npm` and network access for the SPDX list.
+
+- Don't wrap this in an `npm test` script. The generator overwrites `package.json` on `main`.
+- The empty API key means nothing is uploaded, and offline output holds only the dependency graph. The tests therefore cover the provider contents, the graph FOSSA resolves for `main`, and `node index.js`. They don't assert that FOSSA detects any license, because that happens server-side after an upload.
+- After `npm install`, FOSSA reports packages by their npm alias (`npm+mit$1.0.0`) and drops the git URL. A server-side scan may therefore look up `mit` on the public npm registry instead of the provider branch. Check this on a real FOSSA upload before relying on the suite for license detection.

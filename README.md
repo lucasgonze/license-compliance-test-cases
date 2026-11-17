@@ -25,6 +25,7 @@ The repository tests license detection by making one repository contain many lic
 | `AGENTS.md`, `CLAUDE.md` | Entry points for AI agents. `CLAUDE.md` imports `AGENTS.md`, which points to `SKILL.md`. |
 | `.claude/skills/license-compliance-test-cases-install/SKILL.md` | Symlink to `SKILL.md` that registers it as a skill in Claude Code. |
 | `.gitignore` | Keeps `node_modules/` and `package-lock.json` from `npm install` out of git. |
+| `test/` | Integration tests that run `fossa analyze` offline on the generated output. |
 | `package.json`, `index.js` | The consumer app. Generated, and absent until the generator has run. |
 | `licenses/`, `platforms/` | Placeholders for sample licenses and for sample languages and package managers. They are empty so far. |
 
@@ -62,6 +63,14 @@ node index.js
 The low socket count keeps npm from starting hundreds of simultaneous `git clone` processes, which can hit GitHub rate limits. `node index.js` should print one `Loaded <ID> branch: ...` line per provider.
 
 To test a scanner, run it against `main` after `npm install` and check that each declared license is reported. See `SKILL.md` for the full procedure and known pitfalls.
+
+## Tests
+
+```bash
+node --test test/fossa.integration.test.mjs
+```
+
+The test builds the debug set in a temporary repo and runs `fossa analyze --output` with an empty `FOSSA_API_KEY`, so nothing is uploaded. Offline output has the dependency graph but no license findings, so the tests check the provider contents, the graph FOSSA resolves for `main`, and `node index.js`. See `SKILL.md` for the registry-lookup caveat.
 
 ## Status
 
