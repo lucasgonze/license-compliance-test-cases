@@ -1,0 +1,7 @@
+{
+  "name": "license-test-w3c-20150513",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "W3C-20150513"
+}

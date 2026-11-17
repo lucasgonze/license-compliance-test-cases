@@ -1,0 +1,2 @@
+export const text = "Lorem ipsum dolor sit amet...";
+export const license = "W3C-20150513";
