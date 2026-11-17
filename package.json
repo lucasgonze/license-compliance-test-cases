@@ -1,0 +1,7 @@
+{
+  "name": "license-test-bsl-1.0",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "BSL-1.0"
+}
