@@ -1,0 +1,7 @@
+{
+  "name": "license-test-caldera-no-preamble",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "Caldera-no-preamble"
+}
