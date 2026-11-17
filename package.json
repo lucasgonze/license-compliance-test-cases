@@ -1,0 +1,7 @@
+{
+  "name": "license-test-openpbs-2.3",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "OpenPBS-2.3"
+}
