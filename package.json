@@ -1,0 +1,7 @@
+{
+  "name": "license-test-osl-2.0",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "OSL-2.0"
+}
