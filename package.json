@@ -1,0 +1,7 @@
+{
+  "name": "license-test-adobe-display-postscript",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "Adobe-Display-PostScript"
+}
