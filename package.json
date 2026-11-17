@@ -1,0 +1,7 @@
+{
+  "name": "license-test-w3m",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "w3m"
+}
