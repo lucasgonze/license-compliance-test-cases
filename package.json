@@ -1,0 +1,7 @@
+{
+  "name": "license-test-spencer-94",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "Spencer-94"
+}
