@@ -1,0 +1,7 @@
+{
+  "name": "license-test-eupl-1.0",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "EUPL-1.0"
+}
