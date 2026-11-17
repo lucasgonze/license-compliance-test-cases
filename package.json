@@ -1,0 +1,7 @@
+{
+  "name": "license-test-bsd-mark-modifications",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "BSD-Mark-Modifications"
+}
