@@ -1,0 +1,7 @@
+{
+  "name": "license-test-bsd-4.3reno",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "BSD-4.3RENO"
+}
