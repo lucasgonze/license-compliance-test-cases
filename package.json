@@ -1,0 +1,7 @@
+{
+  "name": "license-test-cc-by-nc-sa-2.5",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "CC-BY-NC-SA-2.5"
+}
