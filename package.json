@@ -1,0 +1,7 @@
+{
+  "name": "license-test-advanced-cryptics-dictionary",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "Advanced-Cryptics-Dictionary"
+}
