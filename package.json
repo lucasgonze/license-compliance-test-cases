@@ -1,0 +1,7 @@
+{
+  "name": "license-test-cdl-1.0",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "CDL-1.0"
+}
