@@ -1,0 +1,7 @@
+{
+  "name": "license-test-rscpl",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "RSCPL"
+}
