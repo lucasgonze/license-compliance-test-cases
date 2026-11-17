@@ -1,0 +1,7 @@
+{
+  "name": "license-test-rpl-1.5",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "RPL-1.5"
+}
