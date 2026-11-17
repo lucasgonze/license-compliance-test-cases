@@ -1,0 +1,7 @@
+{
+  "name": "license-test-naist-2003",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "NAIST-2003"
+}
