@@ -1,0 +1,7 @@
+{
+  "name": "license-test-game-programming-gems",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "Game-Programming-Gems"
+}
