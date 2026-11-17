@@ -1,0 +1,7 @@
+{
+  "name": "license-test-dtoa",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "dtoa"
+}
