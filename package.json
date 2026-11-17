@@ -1,0 +1,7 @@
+{
+  "name": "license-test-softsurfer",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "softSurfer"
+}
